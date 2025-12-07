@@ -36,8 +36,8 @@ df =df[df["price"] > 0]
 def calculate_total_profit(row):
     return round(row["price"] * row["qty"],2)
 
-# The IA did not generated the function but it did not added anything to the data
-# The IA also did not round the values, which make the data look weird
+# The AI did not generated the function but it did not added anything to the data
+# The AI also did not round the values, which make the data look weird
 df["total_profit"] = df.apply(calculate_total_profit, axis=1)
 
 
